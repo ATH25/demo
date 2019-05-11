@@ -9,8 +9,7 @@ public class BinarySearchImpl {
 		this.sortAlgorithm = sortAlgorithm;
 	}
 
-//Adding a comment in git
-//comment after renamig the project repository
+//REMOVING ALL COMMENTS AND CHECKING IN
 	/*This is just a fake search just for the purpose of the demo*/
 	public int binarySearch(int[] numbers, int numberToSerchFor){
 		int index;
