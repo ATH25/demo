@@ -1,4 +1,4 @@
-package com.thomas.demo;
+package com.thomas.demo.basic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -1,4 +1,4 @@
-package com.thomas.demo;
+package com.thomas.demo.basic;
 
 public interface SortAlgorithm {
 	public int[] sort (int[] numbers);

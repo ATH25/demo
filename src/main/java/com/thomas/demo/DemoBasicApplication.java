@@ -4,14 +4,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import com.thomas.demo.basic.BinarySearchImpl;
+
 @SpringBootApplication
-public class DemoApplication {
+public class DemoBasicApplication {
 
 	public static void main(String[] args) {
 		
 //		BinarySearchImpl binarySearchImpl = new BinarySearchImpl(new BubbleSortAlgorithm() );
 		
-		ApplicationContext applicationContext = SpringApplication.run(DemoApplication.class, args);
+		ApplicationContext applicationContext = SpringApplication.run(DemoBasicApplication.class, args);
 		
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
 		BinarySearchImpl binarySearch1 = applicationContext.getBean(BinarySearchImpl.class);
