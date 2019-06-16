@@ -1,5 +1,10 @@
 package com.thomas.demo.basic;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -9,22 +14,24 @@ import org.springframework.stereotype.Component;
 @Component //you can click command +1 to import the Component 
 @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class BinarySearchImpl {
-
 	
+	private Logger logger = LoggerFactory.getLogger(this.getClass()); 
+	
+	/*{
 	// CONSTRUCTOR INJECTION
-	/*	public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
+		public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
 			super();
 			this.sortAlgorithm = sortAlgorithm;
-		}*/
+		}
 		
 	// SETTER INJECTION
-	/*	public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
+		public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
 			this.sortAlgorithm = sortAlgorithm;
-		}*/
+		}
 	
 //	@Autowired // looks like this is equal to private SortAlgorithm bubbleSortAlgorithm = new BubbleSortAlgorithm();
 //	private SortAlgorithm bubbleSortAlgorithm; 
-	
+	}*/
 		
 	@Autowired
 	@Qualifier("quick")
@@ -37,12 +44,24 @@ public class BinarySearchImpl {
 		//logic to sort the array
 		//BubbleSortAlgorithm bubbleSortAlgorithm = new BubbleSortAlgorithm();
 		int[] sortedNumbers = sortAlgorithm.sort(numbers);
-		System.out.println("sortAlgorithm is: "+ sortAlgorithm);
+		logger.info("in BinarySearchImpl: sortAlgorithm is: "+ sortAlgorithm);
 		
 		//logic to search in the array
 		index = 3;
 		//return the result
 		return index;	
+	}
+	
+	@PostConstruct /*will be called as soon as the bean has been created.
+		The name of the method doesnt matter. 
+		But it is important that you have to have the right annotation */
+	public void PostConstruct(){
+		logger.info("in BinarySearchImpl: ********** PostConstruct **********");
+	}
+	
+	@PreDestroy
+	public void PreDestroy() {
+		logger.info("in BinarySearchImpl: ********** PreDestroy **********");
 	}
 
 }

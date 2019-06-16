@@ -18,8 +18,8 @@ public class DemoBasicApplication {
 		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
 		BinarySearchImpl binarySearch1 = applicationContext.getBean(BinarySearchImpl.class);
 		
-		System.out.println(" binarySearch: "+ binarySearch);
-		System.out.println("binarySearch1: "+ binarySearch1);
+		System.out.println("DemoBasicApplication: binarySearch: "+ binarySearch);
+		System.out.println("DemoBasicApplication: binarySearch1: "+ binarySearch1);
 		
 		int location = binarySearch.binarySearch(new int[]{12,4,3,5}, 3);
 		
