@@ -1,8 +1,10 @@
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/basic/componentscan/ComponentDAO.java
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/scope/JdbcConnection.java
+/Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/xml/XmlJdbcConnection.java
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/DemoBasicApplication.java
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/basic/cdi/SomeCdiBusiness.java
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/basic/QuickSortAlgorithm.java
+/Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/xml/XMLPersonDAO.java
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/DemoComponentScanApplication.java
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/basic/cdi/SomeCdiDao.java
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/basic/SortAlgorithm.java
@@ -10,5 +12,6 @@
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/DemoCdiApplication.java
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/scope/PersonDAO.java
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/basic/componentscan/ComponentJdbcConnection.java
+/Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/DemoXMLContextApplication.java
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/basic/BubbleSortAlgorithm.java
 /Users/ajuthomas/Documents/OneDrive/dev/git/spring_proj/demo/src/main/java/com/thomas/demo/DemoScopeApplication.java
