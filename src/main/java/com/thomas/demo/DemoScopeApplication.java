@@ -28,12 +28,12 @@ public class DemoScopeApplication {
 		
 		PersonDAO personDAO2 = applicationContext.getBean(PersonDAO.class);
 		
-		LOGGER.info("{}", personDAO);
-		LOGGER.info("{}", personDAO.getJdbcConnection());
-		LOGGER.info("{}", personDAO.getJdbcConnection()); // this returns a different jdbc connection than the above. 
+		LOGGER.info("## {}", personDAO);
+		LOGGER.info("## {}", personDAO.getJdbcConnection());
+		LOGGER.info("## {}", personDAO.getJdbcConnection()); // this returns a different jdbc connection than the above. 
 		
-		LOGGER.info("{}", personDAO2);
-		LOGGER.info("{}", personDAO2.getJdbcConnection());
+		LOGGER.info("## {}", personDAO2);
+		LOGGER.info("## {}", personDAO2.getJdbcConnection());
 		}
 		
 	}
