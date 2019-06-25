@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.thomas.demo.DemoBasicApplication;
 
 @RunWith(SpringRunner.class)
-@ContextConfiguration(classes=DemoBasicApplication.class)
+@ContextConfiguration(locations="/testContext.xml")
 public class BinarySearchXMLConfigurationTest {
 	
 	@Autowired

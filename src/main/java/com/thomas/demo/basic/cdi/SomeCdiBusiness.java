@@ -20,6 +20,17 @@ public class SomeCdiBusiness {
 		this.someCdiDao = someCdiDao;
 	}
 
-
+	public int findTheGreatest(){
+		int greatest = Integer.MIN_VALUE;
+		int[] data = someCdiDao.getData();
+		
+		for (int i : data) {
+			if(i > greatest){
+				greatest = i; 
+			}
+		}
+		return greatest;
+	} //findTheGreatest
+	
 
 }
